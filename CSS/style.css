@@ -1,0 +1,177 @@
+:root {
+--color-blue: #0d46b1;
+--color-red: #c40707;  
+--color-grey: #c0bdbd;  
+--color-bleu: #322e6b;  
+--color-green: #18740c;
+--color-yellow: #e6e92f;
+--spacer-xs : 10px;
+--spacer-l : 30px;
+}
+
+/* pour réutiliser variables existantes : 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+*/
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* la façon dont la flèche va permettre le retour en haut de la page*/
+
+body {
+
+    background-color: black;
+}
+
+
+.parent {
+    
+    background-color: var(--color-grey);
+    position: relative;
+    justify-content: center;
+    width: 90%;
+    margin: 150px auto 0 auto;
+}
+
+header {
+
+    display: flex;
+    position: absolute;
+    background-color: var(--color-red);
+    top: 0;
+    height: 30em;
+    
+}
+
+nav {
+    
+    font-style: bold;
+    font-size: 1em;
+    margin: 2em auto;
+
+}
+
+.logo {
+
+    height: 10%;
+    width: 10%;
+    margin: 2em auto;
+}
+
+.line-container {
+
+    display: flex;
+
+}
+
+
+#slider-container {
+
+    background-color:black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.precedent {
+
+position: absolute;
+top: 15%;
+left: 80px;
+
+}
+
+.suivant {
+    
+    position: absolute;
+    top: 15%;
+    right: 100px;
+    
+}
+
+.images-textes {
+
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  
+ }
+
+#slider {
+    
+    
+    display: flex;
+    height: 100%;
+    width: 70%;
+  }
+
+.image {
+    
+    width: 13%;
+    margin: 3em 0 3em 3em;
+  
+}
+
+.image img {
+
+    width: 100%;
+    height: ;
+   
+}
+
+.texte {
+
+    background-color: var(--color-grey);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50em;
+    height: 100%;
+    margin: 3em 0 3em 0;
+    padding: 1em;
+}
+
+  
+.rec {
+
+    background-color: var(--color-red);
+    width: 10em;
+    margin-left: auto;
+    margin-right: 0;
+}
+  
+
+footer {
+
+    background-color: var(--color-blue);
+    font-size: 1em;
+    color: rgb(224, 208, 208);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacer-l);  
+    width: 100%;
+    margin: 0 auto;
+}
+
+.backToTop {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background-color:var(--color-red);
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .backToTop a{
+    color: black;
+    display: block;
+    margin: auto;
+    
+  }
